@@ -77,4 +77,31 @@ describe('Stack', function () {
       })
   
     })
+    
+    describe('solvePostfix', function() {
+        it('should add two numbers', function() {
+            expect(stack.solvePostfix("5 3 +")).toEqual(8);
+        })
+        it('should subtract two numbers', function() {
+            expect(stack.solvePostfix("5 3 -")).toEqual(2);
+        })
+        it('should multiply two numbers', function() {
+            expect(stack.solvePostfix("5 3 *")).toEqual(15);
+        })
+        it('should divide two numbers', function() {
+            expect(stack.solvePostfix("15 5 /")).toEqual(3);
+        })
+        it('should power two numbers', function() {
+            expect(stack.solvePostfix("5 3 ^")).toEqual(125);
+        })
+        it('should calc long stuff', function() {
+            expect(stack.solvePostfix("5 3 6 * + 5 3 / - 7 +")).toEqual(29);
+        })
+        it('should return undefined with bad inputs', function() {
+            expect(stack.solvePostfix("+ +")).toBeUndefined();
+        })
+        it('should return undefined with bad inputs', function() {
+            expect(stack.solvePostfix("5 3 6 * + 5 3 / - 7 + 5")).toBeUndefined();
+        })
+    })
   })
