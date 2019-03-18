@@ -1,0 +1,21 @@
+{
+  "name": "stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests",
+    "tests": "mocha tests --watch"
+  },
+  "author": "Todd Hale",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^24.5.0",
+    "mocha": "^6.0.2"
+  },
+  "dependencies": {}
+}
