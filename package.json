@@ -9,13 +9,15 @@
   },
   "scripts": {
     "test": "mocha tests",
+    "lltest": "mocha tests/linked-list-tests.js",
     "tests": "mocha tests --watch"
   },
   "author": "Todd Hale",
   "license": "ISC",
   "devDependencies": {
     "expect": "^24.5.0",
-    "mocha": "^6.0.2"
+    "mocha": "^6.0.2",
+    "npm": "^6.9.0"
   },
   "dependencies": {}
 }
